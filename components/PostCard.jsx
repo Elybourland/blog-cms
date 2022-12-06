@@ -3,7 +3,6 @@ import moment from 'moment';
 import Link from 'next/link';
 
 const PostCard = ({ post }) => {
-  console.log(post);
 
   return (
     <div className='bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
@@ -23,8 +22,8 @@ const PostCard = ({ post }) => {
         <div className='flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8'>
           <img 
             alt={post.author.name}
-            height='30px'
-            width='30px'
+            height='30'
+            width='30'
             className='align-middle rounded-full'
             src={post.author.photo.url}
           />
